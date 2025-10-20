@@ -1,5 +1,6 @@
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import React, { useEffect, useState } from 'react';
-
+import WorkingAnimation from '../Animations/WorkingAnimation.json'
 const About: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -23,7 +24,7 @@ const About: React.FC = () => {
 
   const stats = [
     { number: '2+', label: 'Years Experience' },
-    { number: '10+', label: 'Projects Completed' },
+    { number: '3+', label: 'Projects Completed' },
     { number: '5+', label: 'Technologies Mastered' },
     { number: '100%', label: 'Client Satisfaction' },
   ];
@@ -86,21 +87,28 @@ const About: React.FC = () => {
               {/* Main image container */}
               <div className="relative z-10 bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl p-8 shadow-2xl">
                 <div className="bg-white rounded-xl p-6 shadow-lg">
-                  <div className="w-full h-64 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
+                  <div className=" bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
                     {/* Placeholder for about image */}
-                    <svg className="w-24 h-24 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
+                    {/* <svg className="" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                    </svg>
+                    </svg> */}
+                    <DotLottieReact
+                      data={WorkingAnimation}
+                      loop
+                      autoplay
+                      className='aspect-auto'
+
+                    />
                   </div>
 
                   {/* Quick skills preview */}
                   <div className="mt-6 space-y-3">
                     <h3 className="text-lg font-semibold text-gray-900">Core Technologies</h3>
                     <div className="flex flex-wrap gap-2">
-                      {['React', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Express'].map((tech, index) => (
+                      {['Javascript', 'ReactJs', 'TypeScript', 'Tailwind CSS', 'Ant Design', 'Hero UI', 'Node.js', 'MongoDB', 'ExpressJs', 'Redis', 'AWS', 'Docker'].map((tech, index) => (
                         <span
                           key={tech}
-                          className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium"
+                          className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium shadow-md"
                         >
                           {tech}
                         </span>

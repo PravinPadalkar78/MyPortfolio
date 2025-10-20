@@ -181,11 +181,11 @@ const Education: React.FC = () => {
                 </div>
 
                 {/* Project Link */}
-                <div className="pt-4">
-                  <button className="w-full px-6 py-3 bg-gradient-to-r from-secondary-500 to-primary-500 text-white font-semibold rounded-lg hover:from-secondary-600 hover:to-primary-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <a className="pt-4" target='_blank' href='https://galen-assigment-aqsq.vercel.app/'>
+                  <button className="w-full px-6 py-3 bg-gradient-to-r from-secondary-500 to-primary-500 text-black font-semibold rounded-lg hover:from-secondary-600 hover:to-primary-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                     View Live Project
                   </button>
-                </div>
+                </a>
               </div>
             </div>
           </div>

@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <button
                 onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
-                className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer text-sm sm:text-base"
+                className="px-6 py-3 sm:px-8 sm:py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-900 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer text-sm sm:text-base"
               >
                 Get In Touch
               </button>

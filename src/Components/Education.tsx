@@ -71,7 +71,7 @@ const Education: React.FC = () => {
               {/* Header */}
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-8 h- text-black" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                   </svg>
                 </div>
@@ -82,7 +82,7 @@ const Education: React.FC = () => {
               </div>
 
               {/* Education Content */}
-              <div className="space-y-4">
+              <div className="space-y-4 py-2">
                 <div>
                   <h4 className="text-xl font-semibold text-gray-900 mb-2">{education.degree}</h4>
                   <h5 className="text-lg font-medium text-primary-600 mb-2">{education.institution}</h5>
@@ -116,7 +116,7 @@ const Education: React.FC = () => {
                   <h5 className="text-sm font-semibold text-gray-900 mb-3">Key Subjects</h5>
                   <div className="flex flex-wrap gap-2">
                     {['Data Structures & Algorithms', 'Database Management', 'Computer Networks', 'Software Engineering', 'Object-Oriented Programming'].map((subject, index) => (
-                      <span key={index} className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">
+                      <span key={index} className="px-3 py-1 bg-primary-100 shadow text-primary-700 rounded-full text-sm font-medium">
                         {subject}
                       </span>
                     ))}
@@ -128,11 +128,11 @@ const Education: React.FC = () => {
 
           {/* Freelancing Project */}
           <div className={`${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
-            <div className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-gray-100">
+            <div className="bg-white rounded-xl  shadow-lg hover:shadow-xl transition-all duration-300 p-8 border border-gray-100">
               {/* Header */}
               <div className="flex items-center mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-secondary-500 to-primary-500 rounded-xl flex items-center justify-center mr-4">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-8 h- text-cyan-950" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 4a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1V8zm8 0a1 1 0 011-1h4a1 1 0 011 1v2a1 1 0 01-1 1h-4a1 1 0 01-1-1V8z" clipRule="evenodd" />
                   </svg>
                 </div>
@@ -143,7 +143,7 @@ const Education: React.FC = () => {
               </div>
 
               {/* Project Content */}
-              <div className="space-y-4">
+              <div className="space-y-4 py-2">
                 <div>
                   <h4 className="text-xl font-semibold text-gray-900 mb-2">{freelancingProject.title}</h4>
                   <div className="flex items-center mb-4">
@@ -161,7 +161,7 @@ const Education: React.FC = () => {
                   <div className="space-y-2">
                     {freelancingProject.features.map((feature, index) => (
                       <div key={index} className="flex items-start">
-                        <div className="flex-shrink-0 w-2 h-2 bg-secondary-500 rounded-full mt-2 mr-3"></div>
+                        <div className="flex-shrink-0  w-2 h-2 bg-green-500 rounded-full mt-2 mr-3"></div>
                         <span className="text-gray-700 text-sm">{feature}</span>
                       </div>
                     ))}
@@ -173,7 +173,7 @@ const Education: React.FC = () => {
                   <h5 className="text-sm font-semibold text-gray-900 mb-3">Technologies Used</h5>
                   <div className="flex flex-wrap gap-2">
                     {freelancingProject.technologies.map((tech, index) => (
-                      <span key={index} className="px-3 py-1 bg-secondary-100 text-secondary-700 rounded-full text-sm font-medium">
+                      <span key={index} className="px-3 py-1 bg-secondary-100 shadow text-secondary-700 rounded-full text-sm font-medium">
                         {tech}
                       </span>
                     ))}
@@ -182,7 +182,7 @@ const Education: React.FC = () => {
 
                 {/* Project Link */}
                 <a className="pt-4" target='_blank' href='https://galen-assigment-aqsq.vercel.app/'>
-                  <button className="w-full px-6 py-3 bg-gradient-to-r from-secondary-500 to-primary-500 text-black font-semibold rounded-lg hover:from-secondary-600 hover:to-primary-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+                  <button className="w-full px-6 py-3 bg-gradient-to-r from-secondary-500 to-primary-500 text-green-500 font-semibold rounded-lg hover:from-secondary-600 hover:to-primary-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
                     View Live Project
                   </button>
                 </a>

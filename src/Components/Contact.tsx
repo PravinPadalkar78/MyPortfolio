@@ -89,7 +89,7 @@ const Contact: React.FC = () => {
       ),
       title: 'LinkedIn',
       value: 'linkedin.com/in/pravin-padalkar',
-      link: 'https://linkedin.com/in/pravin-padalkar'
+      link: 'https://linkedin.com/in/pravinpadalkar78'
     }
   ];
 
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
               <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://linkedin.com/in/pravin-padalkar"
+                  href="https://linkedin.com/in/pravinpadalkar78"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white hover:bg-blue-700 transform hover:scale-110 transition-all duration-300"

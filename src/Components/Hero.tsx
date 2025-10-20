@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com/in/pravin-padalkar"
+                href="https://linkedin.com/in/pravinpadalkar78"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transform hover:scale-110 transition-all duration-300 cursor-pointer"

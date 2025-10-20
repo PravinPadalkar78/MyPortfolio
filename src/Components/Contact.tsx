@@ -125,19 +125,19 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Contact Cards */}
-            <div className="space-y-2">
+            <div className="space-y-6">
               {contactInfo.map((contact, index) => (
                 <a
                   key={index}
                   href={contact.link}
                   target={contact.link.includes('http') ? '_blank' : '_self'}
                   rel={contact.link.includes('http') ? 'noopener noreferrer' : ''}
-                  className={`block px-2 py-4 bg-gradient-to-r from-gray-50 to-white rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-lg transition-all duration-300 hover:scale-105 ${isVisible ? 'animate-slide-up' : 'opacity-0'
+                  className={`block px-4 py-4 bg-gradient-to-r from-gray-50 to-white rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-lg transition-all duration-200 hover:scale-105 ${isVisible ? 'animate-slide-up' : 'opacity-0'
                     }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex P">
-                    <div className=" bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mr-4 text-white">
+                    <div className=" bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mr-6 text-black">
                       {contact.icon}
                     </div>
                     <div>
@@ -185,7 +185,7 @@ const Contact: React.FC = () => {
 
           {/* Contact Form */}
           <div className={`${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
-            <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-8 border border-primary-100">
+            <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-6 lg:p-8 border border-primary-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
 
               <form onSubmit={handleSubmit} className="space-y-6">

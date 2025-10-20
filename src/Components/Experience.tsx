@@ -125,9 +125,9 @@ const Experience: React.FC = () => {
                 </div>
 
                 {/* Content Card */}
-                <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-12 ml-16 lg:ml-0' : 'lg:pl-12 ml-16 lg:ml-0'
+                <div className={`w-full lg:w-5/12 ${index % 2 === 0 ? 'lg:pr-12 ml-12 lg:ml-0' : 'lg:pl-12 ml-12 lg:ml-0'
                   }`}>
-                  <div className="group bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 p-8 border border-gray-100 hover:border-primary-200 relative overflow-hidden cursor-pointer">
+                  <div className="group bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 p-4 lg:p-8 border border-gray-100 hover:border-primary-200 relative overflow-hidden cursor-pointer">
                     {/* Card background gradient */}
                     <div className="absolute inset-0 bg-gradient-to-br from-primary-50/50 to-secondary-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 

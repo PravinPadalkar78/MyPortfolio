@@ -124,13 +124,13 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Profile Image */}
-          <div className={`flex justify-center lg:justify-end mt-8 lg:mt-0 px-4 sm:px-0 ${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
+          <div className={`flex justify-center lg:justify-end mt-8 lg:mt-0 px-4 sm:px-0 animate-float ${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
             <div className="relative group cursor-pointer">
               {/* Animated rings around profile */}
               <div className="absolute inset-0 rounded-full border-2 border-white/20 animate-spin-slow"></div>
               <div className="absolute inset-2 rounded-full border border-white/10 animate-spin-reverse"></div>
 
-              <div className="w-64 h-64 sm:w-72 sm:h-72 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-primary-400 via-purple-500 to-secondary-600 p-2 shadow-2xl group-hover:shadow-3xl transition-all duration-500 group-hover:scale-105">
+              <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full bg-gradient-to-br from-primary-400 via-purple-500 to-secondary-600 p-2 shadow-2xl group-hover:shadow-3xl transition-all duration-500 group-hover:scale-105">
                 <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-200 to-gray-300 overflow-hidden relative">
                   {/* Animated background pattern */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-purple-400/20 to-pink-400/20 "></div>

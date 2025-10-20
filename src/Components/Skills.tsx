@@ -153,7 +153,7 @@ const Skills: React.FC = () => {
 
         {/* Additional Skills Section */}
         <div className={`mt-16 ${isVisible ? 'animate-slide-up' : 'opacity-0'}`} style={{ animationDelay: '0.8s' }}>
-          <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-8 border border-primary-100">
+          <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-4 border border-primary-100">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Additional Expertise</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[

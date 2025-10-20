@@ -31,12 +31,6 @@ const About: React.FC = () => {
 
   return (
     <section id="about" className="py-20 bg-white relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-5">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-primary-500 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-secondary-500 rounded-full blur-3xl"></div>
-      </div>
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left side - About text */}
@@ -85,7 +79,7 @@ const About: React.FC = () => {
           <div className={`${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
             <div className="relative">
               {/* Main image container */}
-              <div className="relative z-10 bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl p-8 shadow-2xl">
+              <div className="relative z-10 bg-gradient-to-br from-primary-100 to-secondary-100 rounded-2xl p-4 lg:p-8 shadow-2xl">
                 <div className="bg-white rounded-xl p-6 shadow-lg">
                   <div className=" bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg flex items-center justify-center">
                     {/* Placeholder for about image */}
@@ -119,8 +113,8 @@ const About: React.FC = () => {
               </div>
 
               {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-20 h-20 bg-yellow-400 rounded-full animate-pulse-slow"></div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-pink-400 rounded-full animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute -top-4 -right-4 w-16 h-16 lg:w-20 lg:h-20 bg-yellow-400 rounded-full animate-pulse-slow"></div>
+              <div className="absolute -bottom-2 -left-2 lg:-bottom-4 lg:-left-4 w-12 h-12 lg:w-16 lg:h-16 bg-pink-400 rounded-full animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
             </div>
           </div>
         </div>

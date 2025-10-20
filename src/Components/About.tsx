@@ -70,7 +70,7 @@ const About: React.FC = () => {
               {stats.map((stat, index) => (
                 <div
                   key={index}
-                  className={`text-center p-6 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl border border-primary-100 hover:shadow-lg transition-all duration-300 hover:scale-105 ${isVisible ? 'animate-slide-up' : 'opacity-0'
+                  className={`text-center p-4 lg:p-6 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl border border-primary-100 hover:shadow-lg transition-all duration-300 hover:scale-105 ${isVisible ? 'animate-slide-up' : 'opacity-0'
                     }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >

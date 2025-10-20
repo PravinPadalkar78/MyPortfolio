@@ -33,7 +33,7 @@ const Skills: React.FC = () => {
           // Animate skills after a short delay
           setTimeout(() => {
             animateSkills();
-          }, 500);
+          }, 100);
         }
       },
       { threshold: 0.1 }

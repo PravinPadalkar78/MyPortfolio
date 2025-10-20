@@ -88,13 +88,13 @@ const Contact: React.FC = () => {
         </svg>
       ),
       title: 'LinkedIn',
-      value: 'linkedin.com/in/pravin-padalkar',
+      value: 'linkedin.com/in/pravinpadalkar78',
       link: 'https://linkedin.com/in/pravinpadalkar78'
     }
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white relative overflow-hidden">
+    <section id="contact" className=" px-2 py-20 bg-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-20 left-20 w-96 h-96 bg-primary-500 rounded-full blur-3xl"></div>
@@ -137,7 +137,7 @@ const Contact: React.FC = () => {
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="flex P">
-                    <div className=" bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mr-6 text-black">
+                    <div className=" bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mr-4 text-black">
                       {contact.icon}
                     </div>
                     <div>
@@ -185,7 +185,7 @@ const Contact: React.FC = () => {
 
           {/* Contact Form */}
           <div className={`${isVisible ? 'animate-slide-in-right' : 'opacity-0'}`}>
-            <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl p-6 lg:p-8 border border-primary-100">
+            <div className="bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl px-4 py-6 lg:p-8 border border-primary-100">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
 
               <form onSubmit={handleSubmit} className="space-y-6">

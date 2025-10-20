@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { lazy, useEffect, useState } from "react";
 
 import Experience from "./Components/Experience";
 import Navbar from "./Components/Navbar";
@@ -7,6 +7,7 @@ import About from "./Components/About";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import Education from "./Components/Education";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);

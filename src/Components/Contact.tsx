@@ -16,7 +16,7 @@ const Contact: React.FC = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     const element = document.getElementById('contact');
@@ -125,19 +125,19 @@ const Contact: React.FC = () => {
             </div>
 
             {/* Contact Cards */}
-            <div className="space-y-4">
+            <div className="space-y-2">
               {contactInfo.map((contact, index) => (
                 <a
                   key={index}
                   href={contact.link}
                   target={contact.link.includes('http') ? '_blank' : '_self'}
                   rel={contact.link.includes('http') ? 'noopener noreferrer' : ''}
-                  className={`block p-6 bg-gradient-to-r from-gray-50 to-white rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-lg transition-all duration-300 hover:scale-105 ${isVisible ? 'animate-slide-up' : 'opacity-0'
+                  className={`block px-2 py-4 bg-gradient-to-r from-gray-50 to-white rounded-xl border border-gray-100 hover:border-primary-200 hover:shadow-lg transition-all duration-300 hover:scale-105 ${isVisible ? 'animate-slide-up' : 'opacity-0'
                     }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="flex items-center">
-                    <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mr-4 text-white">
+                  <div className="flex P">
+                    <div className=" bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center mr-4 text-white">
                       {contact.icon}
                     </div>
                     <div>

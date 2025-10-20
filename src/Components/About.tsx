@@ -10,7 +10,7 @@ const About: React.FC = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.1 }
     );
 
     const element = document.getElementById('about');
@@ -49,17 +49,17 @@ const About: React.FC = () => {
 
             <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
               <p>
-                I'm a passionate and detail-oriented Full Stack Developer with a deep focus on crafting 
+                I'm a passionate and detail-oriented Full Stack Developer with a deep focus on crafting
                 meaningful digital experiences that blend performance, simplicity, and user delight.
               </p>
               <p>
-                Driven by curiosity and continuous learning, I take pride in translating complex ideas 
-                into elegant, scalable solutions that make a real difference. I value clean design, 
+                Driven by curiosity and continuous learning, I take pride in translating complex ideas
+                into elegant, scalable solutions that make a real difference. I value clean design,
                 thoughtful architecture, and teamwork that thrives on shared growth and accountability.
               </p>
               <p>
-                Currently working as a Full Stack Developer at D.K Tech Solutions And Enterprises, 
-                where I develop CRM systems and streamline business operations through innovative 
+                Currently working as a Full Stack Developer at D.K Tech Solutions And Enterprises,
+                where I develop CRM systems and streamline business operations through innovative
                 technology solutions.
               </p>
             </div>
@@ -67,11 +67,10 @@ const About: React.FC = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 gap-8 pt-8">
               {stats.map((stat, index) => (
-                <div 
+                <div
                   key={index}
-                  className={`text-center p-6 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl border border-primary-100 hover:shadow-lg transition-all duration-300 hover:scale-105 ${
-                    isVisible ? 'animate-slide-up' : 'opacity-0'
-                  }`}
+                  className={`text-center p-6 bg-gradient-to-br from-primary-50 to-secondary-50 rounded-xl border border-primary-100 hover:shadow-lg transition-all duration-300 hover:scale-105 ${isVisible ? 'animate-slide-up' : 'opacity-0'
+                    }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="text-3xl font-bold text-primary-600 mb-2">{stat.number}</div>
@@ -93,13 +92,13 @@ const About: React.FC = () => {
                       <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
                     </svg>
                   </div>
-                  
+
                   {/* Quick skills preview */}
                   <div className="mt-6 space-y-3">
                     <h3 className="text-lg font-semibold text-gray-900">Core Technologies</h3>
                     <div className="flex flex-wrap gap-2">
                       {['React', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS', 'Express'].map((tech, index) => (
-                        <span 
+                        <span
                           key={tech}
                           className="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium"
                         >
